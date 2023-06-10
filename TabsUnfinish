@@ -1,0 +1,124 @@
+<p style="color: gray;">
+<div class="techs" style=" gap: 2px; border: 1px black solid;">
+ 
+<p class="techskillsborders">
+<div class="tabs">
+<button style="font-size: 11px;" class="tablinks" onclick="openTab(event, 'TechnicalSkills')">Technical</button>
+</div>
+</p>
+<p class="techskillsborders">
+<div class="tabs">
+<button style="font-size: 11px;" class="tablinks" onclick="openTab(event, 'SoftSkills')">Soft</button>
+</div>
+</p>
+<p class="techskillsborders">
+<div class="tabs">
+<button style="font-size: 11px;" class="tablinks" onclick="openTab(event, 'HardSkills')">Hard</button>
+</div>
+</p>
+<p class="techskillsborders">
+<div class="tabs">
+<button style="font-size: 11px;" class="tablinks" onclick="openTab(event, 'PersonalSkills')">Personal</button>
+</div>
+</p>
+ 
+<style>
+.techs{
+color: gray;
+text-align: center;
+justify-content: center;
+display: flex;
+flex-wrap: wrap;
+}
+</style>
+ 
+</div>
+</p>
+ 
+ 
+ 
+ 
+<style>
+.techstyle{
+background-color: gray;
+border-radius: 2px;
+padding: 1px 11px;
+font-size: 13px;
+}
+.softstyle{
+background-color: gray;
+border-radius: 2px;
+padding: 1px 11px;
+font-size: 13px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+</style>
+ 
+<div id="TechnicalSkills" class="tab" style="display: block; text-align: center;">
+<p class="techstyle" style="color: white; display: inline-block;">HTML5</p>
+<p class="techstyle" style="color: white; display: inline-block;">CSS3</p>
+<p class="techstyle" style="color: white; display: inline-block;">Javascript</p>
+<p class="techstyle" style="color: white; display: inline-block;">bootstrap</p>
+<p class="techstyle" style="color: white; display: inline-block;">Bulma</p>
+<p class="techstyle" style="color: white; display: inline-block;">W3CSS</p>
+<p class="techstyle" style="color: white; display: inline-block;">Java</p>
+<p class="techstyle" style="color: white; display: inline-block;">Python</p>
+<p class="techstyle" style="color: white; display: inline-block;">Github</p>
+</div>
+ 
+<div id="SoftSkills" class="tab" style="text-align: center;">
+<p class="softstyle" style="color: white; display: inline-block;">Teamwork</p>
+<p class="softstyle" style="color: white; display: inline-block;">Time management</p>
+<p class="softstyle" style="color: white; display: inline-block;">Creativity</p>
+<p class="softstyle" style="color: white; display: inline-block;">Adaptability</p>
+<p class="softstyle" style="color: white; display: inline-block;">Patience</p>
+<p class="softstyle" style="color: white; display: inline-block;">Stress management</p>
+<p class="softstyle" style="color: white; display: inline-block;">Decision Making</p>
+ 
+</div>
+ 
+ 
+ 
+ 
+ 
+ 
+<style>
+.tab {
+display: none;
+}
+</style>
+<div id="SoftSkills" class="tab">
+<p style="color: black;">CSS3</p>
+</div>
+<div id="HardSkills" class="tab">
+<h2 style="color: black;">Hard Skills</h2>
+<p style="color: black;">Content for Hard Skills tab goes here.</p>
+</div>
+<div id="PersonalSkills" class="tab">
+<h2 style="color: black;">Personal Skills</h2>
+<p style="color: black;">Content for Personal Skills tab goes here.</p>
+</div>
+<script>
+function openTab(evt, tabName) {
+var i, tabcontent, tablinks;
+tabcontent = document.getElementsByClassName("tab");
+for (i = 0; i < tabcontent.length; i++) {
+tabcontent[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tablinks");
+for (i = 0; i < tablinks.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+if (tabName === "TechnicalSkills") {
+document.getElementById(tabName).style.display = "block";
+} else {
+document.getElementById(tabName).style.display = "block";
+evt.currentTarget.className += " active";
+}
+}
+</script>
+ 
+
+
